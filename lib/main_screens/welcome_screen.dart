@@ -3,6 +3,7 @@ import 'package:active_life/widgets/button_container.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../authentication/sign_up_screen.dart';
 import '../colors.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -76,7 +77,11 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return const SignUpScreen();
+                  }));
+                },
                 child: Text(
                   'Sign up',
                   style: const TextStyle().copyWith(
