@@ -173,6 +173,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                     ? const Icon(
                                         Icons.done,
                                         size: 10,
+                                  color: Colors.white,
                                       )
                                     : null,
                               ),
@@ -214,7 +215,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         return const OtpScreen();
                       }));
                     },
-                    child: const ButtonContainer(textOfButton: 'Sign in')),
+                    child: const ButtonContainer(textOfButton: 'Sign in'),),
                 const Spacer(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
